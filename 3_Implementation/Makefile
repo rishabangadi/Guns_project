@@ -1,7 +1,7 @@
 # A simple Makefile for compiling small SDL projects
 
 # set the compiler
-CC := clang
+CC := gcc
 
 # set the compiler flags
 CFLAGS := `sdl2-config --libs --cflags` -ggdb3 -O0 --std=c99 -Wall -lSDL2_image -lm
@@ -10,7 +10,7 @@ CFLAGS := `sdl2-config --libs --cflags` -ggdb3 -O0 --std=c99 -Wall -lSDL2_image 
 HDRS :=
 
 # add source files here
-SRCS := main.c
+SRCS := main.c screen_rendering.c SDL_initialisation.c user_input.c
 
 # generate names of object files
 OBJS := $(SRCS:.c=.o)
