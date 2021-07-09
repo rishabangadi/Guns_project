@@ -5,6 +5,7 @@ int main(void)
 {
     memset(&game, 0, sizeof(game_t));
     initSDL();
+    initSounds();
     atexit(cleanup);
     initialise();
     while (1)
