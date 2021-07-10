@@ -171,7 +171,7 @@ void fireBullet(void)
     memset(bullet, 0, sizeof(Item));
     stage.bulletTail->next = bullet;
     stage.bulletTail = bullet;
-    bullet->x = player->x + 56;
+    bullet->x = player->x + 52;
     bullet->y = player->y;
     bullet->dx = PLAYER_BULLET_SPEED;
     bullet->health = 1;
@@ -179,7 +179,6 @@ void fireBullet(void)
     bullet->side = player->side;
     SDL_QueryTexture(bullet->texture, NULL, NULL, &bullet->w, &bullet->h);
     bullet->y += (player->h / 2) - (bullet->h / 2) + 15;
-    //bullet->y += (player->h / 10);
     player->reload = 8;
 }
 void doExplosions(void)
