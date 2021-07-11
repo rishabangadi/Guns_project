@@ -42,6 +42,6 @@ run:
 
 # recipe to clean the workspace
 clean:
-	$(RM) -f $(EXEC) $(OBJS)
+	$(RM) -f $(EXEC) $(OBJS) $(EXEC1).$(EXEC)
 
 .PHONY: all clean
