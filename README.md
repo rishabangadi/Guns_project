@@ -24,5 +24,5 @@ Run the following command in terminal (Debian) :
         make run
 *   **LCTRL (Left Control key)** to **fire**.
 *   **Arrow Keys** for **Movement of Plane**.
-###Enjoy the game
+### Enjoy the game
                 
